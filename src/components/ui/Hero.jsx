@@ -75,7 +75,7 @@ export default function Hero() {
           </span>
   </p>
   <p className='font-bold text-white '>
-    Optimization and Ranking
+    Optimization and Ranking test 
   </p>
 </div>
 
