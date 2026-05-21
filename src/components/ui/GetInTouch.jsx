@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from 'react-router-dom'
-
+import { motion } from "framer-motion" 
 
 export default function GetInTouch() {
   return (
-   <div className="contact-page mx-auto w-[90%] py-10 gap-10 flex flex-col justify-center h-[200px] lg:h-[500px]">
+   <motion.div initial={{opacity:0, x:-50}} animate={{opacity:1, x:0}} transition={{duration:0.3}}  className="contact-page mx-auto w-[90%] py-10 gap-10 flex flex-col justify-center h-[200px] lg:h-[500px]">
   <div className="linkedin flex items-baseline text-3xl">
     <p className=" text-pink-500 font-bold leading-0">LinkedIn </p>
     <a className="ml-3 text-black" href="https://www.linkedin.com/in/noor-fatima-imran/" target="_blank">
@@ -23,7 +23,7 @@ export default function GetInTouch() {
       </svg>
     </a>
   </div>
-</div>
+</motion.div>
 
   );
 }

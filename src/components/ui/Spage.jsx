@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom'
-import { motion } from "framer-motion"
+import { motion } from "framer-motion" 
 
 export default function Spage() {
   return (
@@ -65,7 +65,7 @@ export default function Spage() {
 
       <div className="skill-card flex flex-col lg:flex-row justify-center gap-[50px] lg:items-stretch items-center">
         
-        <motion.div initial={{opacit: 0 , x: -50}} animate={{opacity:1, x:0}} className="card justify-around bg-pink-500 w-[300px] rounded-4xl p-10 flex flex-col items-center">
+        <motion.div initial={{opacity: 0 , x: -50}} animate={{opacity:1, x:0}} transition={{duration:0.3}} className="card justify-around bg-pink-500 w-[300px] rounded-4xl p-10 flex flex-col items-center">
           <span className="text-pink-500 bg-white rounded-full w-14 h-14 flex items-center justify-center">
               <i class="fa-solid fa-code text-lg"></i>
           </span>
@@ -81,7 +81,7 @@ export default function Spage() {
             </div>
         </motion.div>
 
-        <motion.div initial={{opacity:0 , x:-50}} animate={{opacity:1, x:0}} className="card justify-around bg-pink-500 w-[300px] rounded-4xl p-10 flex flex-col items-center gap-3.5">
+        <motion.div initial={{opacity:0 , x:-50}} animate={{opacity:1, x:0}} transition={{duration:0.3}} className="card justify-around bg-pink-500 w-[300px] rounded-4xl p-10 flex flex-col items-center gap-3.5">
           <span className="text-pink-500 bg-white rounded-full w-14 h-14 flex items-center justify-center">
               <i class="fa-solid fa-ranking-star text-lg"></i>
           </span>
@@ -97,7 +97,7 @@ export default function Spage() {
             </div>
         </motion.div>
 
-        <motion.div initial={{opacity:0, x:-50}} animate={{opacity:1, x:0}} className="card justify-around bg-pink-500 w-[300px] rounded-4xl p-10 flex flex-col items-center">
+        <motion.div initial={{opacity:0, x:-50}} animate={{opacity:1, x:0}} transition={{duration:0.3}} className="card justify-around bg-pink-500 w-[300px] rounded-4xl p-10 flex flex-col items-center">
           <span className="text-pink-500 bg-white rounded-full w-14 h-14 flex items-center justify-center">
               <i class="fa-solid fa-hashtag text-lg"></i>
           </span>

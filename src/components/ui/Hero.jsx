@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { motion } from "framer-motion" 
 
 
 export default function Hero() {
   return (
   <section>
-  <div className="container px-5 py-8 my-15 mx-auto w-[90%] flex flex-col lg:flex-row items-center justify-between gap-10">
+  <motion.div initial={{opacity:0, x:-50}} animate={{opacity:1, x:0}} transition={{duration:0.3}} className="container px-5 py-8 my-15 mx-auto w-[90%] flex flex-col lg:flex-row items-center justify-between gap-10">
 
     {/* COL LEFT */}
     <div className="col-left w-full lg:w-1/2">
@@ -66,7 +67,7 @@ export default function Hero() {
 
     </div>
 
-  </div>
+  </motion.div>
 </section>
   )
 }
